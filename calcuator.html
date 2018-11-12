@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<style type="text/css">
+     body{
+        background-color: purple ; 
+     }
+
+
+    #head{
+       height : 70px;
+       margin-left: 470px ;
+       width : 300px ;
+       background-color: white ;
+       border :none;
+       border-radius: 4px ; 
+
+    }
+	  .Calculator{
+	  	position: absolute;
+	  	top : 25%;
+	  	left :40%;
+	  	background-color: blue ;
+	  	padding: 5px ;
+	  	width: 172px ;
+	  	border-radius: 4px ;
+	  	align-content: center;
+	  }
+	  .btn2{
+         height: 40px ;
+         width:40px;
+         border : none ;
+         background-color: white ;
+         color: blue ;
+         font-size: 30px ;
+         border-radius: 2px ;
+         font-family: digital-7  ;
+
+	  }
+	  .btn1 .btn2:hover{
+          background-color: blue ;
+         color: white ;
+         border : none;
+	  }
+	  #screen {
+         width :169.5px;
+         border :none;
+         border-radius: 2px ;
+         font-family: cursive ;
+         font-style: bold ;
+
+	  }
+ 
+</style>
+<body>
+	<div id="head"><h1 id="title" style="text-align: center; color: blue ;font-family: digital-7 ; " onmouseover="changeformat()" onmouseout="resetformat()">This is a calculator</h2></div>
+    <div class="Calculator">
+    	<input type="screen" id="screen"  value="" />
+           <div class="btn1">
+           	 <br></br>
+             <button onclick="addition()" class="btn2">+</button>
+             <button onclick="subtraction()" class="btn2">-</button>
+             <button onclick="divide()" class="btn2" >/</button>
+             <button onclick="multiplication()" class="btn2">x</button>
+             <br></br>
+             <button onclick="add1()" class="btn2" >1</button>
+             <button onclick="add2()" class="btn2" >2</button>
+             <button onclick="add3()" class="btn2" >3</button>
+             <button onclick="sign()" class="btn2" >±</button>
+             <br></br>
+             <button onclick="add4()" class="btn2" >4</button>
+             <button onclick="add5()" class="btn2" >5</button>
+             <button onclick="add6()" class="btn2" >6</button>
+             <button onclick="del()" class="btn2" style="font-size: 10px margin-top:3px" >Del</button>
+             <br></br>
+             <button onclick="add7()" class="btn2" >7</button>
+             <button onclick="add8()" class="btn2" >8</button>
+             <button onclick="add9()" class="btn2" >9</button>
+             <button onclick="delall()" class="btn2" style="font-size: 10px margin-top:3px" >CE</button>
+             <br></br>
+             <button onclick="power2()" class="btn2" >x²</button>
+             <button onclick="add0()" class="btn2" id="zero">0</button>
+             <button onclick="addpoint()" class="btn2">.</button>
+             <br></br>
+             <button onclick="equal()" class="btn2" style="width:171px">=</button>
+           </div> 	
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
